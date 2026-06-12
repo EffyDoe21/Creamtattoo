@@ -1,3 +1,4 @@
+```css
 /* =======================================================
    CREAM TATTOO - ESTILOS COMPLETOS
    Negro / Plateado / Rojo
@@ -192,8 +193,13 @@ input:checked + .slider::before {
 }
 
 @keyframes metalMove {
-  from { background-position: 0%; }
-  to { background-position: 300%; }
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 300%;
+  }
 }
 
 .icono {
@@ -250,7 +256,7 @@ strong {
   color: #fff;
 }
 
-/* LISTAS */
+/* LISTAS GENERALES */
 
 ul,
 ol {
@@ -439,8 +445,8 @@ ol li::before {
 }
 
 #cuidados .avoid-list li {
-  text-align: center;
   padding: 20px 15px;
+  text-align: center;
   border-bottom: none;
   border-right: 1px solid rgba(255,255,255,0.20);
 }
@@ -449,14 +455,16 @@ ol li::before {
   border-right: none;
 }
 
-#cuidados .avoid-list li::before {
-  display: none;
+#cuidados .avoid-list li::before,
+#cuidados .avoid-list li::after {
+  content: none !important;
+  display: none !important;
 }
 
 #cuidados .avoid-list img {
+  display: block;
   width: 70px;
   height: 70px;
-  display: block;
   margin: 0 auto 12px;
   object-fit: contain;
   filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
@@ -586,43 +594,4 @@ ol li::before {
     font-size: 28px;
   }
 }
-
-/* QUITAR ICONOS GENERADOS EN LISTA DE EVITAR */
-#cuidados .avoid-list li::before,
-#cuidados .avoid-list li::after {
-  content: none !important;
-  display: none !important;
-}
-
-/* MOSTRAR LOS ICONOS DEL HTML */
-#cuidados .avoid-list img {
-  display: block !important;
-  width: 70px;
-  height: 70px;
-  margin: 0 auto 12px;
-  object-fit: contain;
-  position: static !important;
-  z-index: 2;
-
-   /* ARREGLO FINAL ICONOS EVITAR */
-#cuidados .avoid-list li {
-  padding: 20px 15px !important;
-  text-align: center !important;
-}
-
-#cuidados .avoid-list li::before {
-  content: "" !important;
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-}
-
-#cuidados .avoid-list img {
-  display: block !important;
-  width: 70px !important;
-  height: 70px !important;
-  margin: 0 auto 12px !important;
-  object-fit: contain !important;
-}
-}
-
+```
