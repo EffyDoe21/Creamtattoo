@@ -191,7 +191,7 @@ function cambiarIdioma(lang) {
   updateList("process-list", t.processList);
   updateList("function-list", t.functionList);
 
-  const careCard = document.querySelector("#cuidados .card");
+ const careCard = document.getElementById("care-content");
   if (careCard) {
     careCard.innerHTML = t.careHTML;
   }
