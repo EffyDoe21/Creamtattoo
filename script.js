@@ -1,5 +1,5 @@
-const toggle = document.getElementById('language-toggle');
-const labelText = document.getElementById('label-text');
+const toggle = document.getElementById("language-toggle");
+const labelText = document.getElementById("label-text");
 
 const texts = {
   es: {
@@ -30,7 +30,9 @@ const texts = {
     ],
 
     originTitle: "Origen de la lanolina",
-    originText: "La lanolina se extrae de la lana de oveja, de las secreciones sebáceas que protegen su piel del clima.",
+    originText:
+      "La lanolina se extrae de la lana de oveja, de las secreciones sebáceas que protegen su piel del clima.",
+
     processTitle: "Proceso de extracción:",
     processList: [
       "<strong>Esquila de la oveja:</strong> Se obtiene la lana y la grasa que la recubre.",
@@ -50,30 +52,83 @@ const texts = {
     careHTML: `
       <h2>Cuidados después de hacerte un tatuaje</h2>
 
+      <div class="care-banner">
+        <img src="./Imagenes/banner.png" alt="Cream Tattoo">
+      </div>
+
       <h3>Fase 1: Las primeras horas (El blindaje)</h3>
-      <p><strong>Respeta el vendaje:</strong> Deja el film transparente o el parche de curación el tiempo indicado por tu tatuador.</p>
-      <p><strong>El primer lavado:</strong> Lava tus manos, retira el vendaje con cuidado y limpia el tatuaje con agua tibia y jabón neutro.</p>
-      <p><strong>El secado:</strong> Seca con papel absorbente a toques suaves.</p>
+
+      <p>
+        <strong>Respeta el vendaje:</strong>
+        Deja el film transparente o el parche de curación el tiempo indicado por tu tatuador.
+      </p>
+
+      <p>
+        <strong>El primer lavado:</strong>
+        Lava tus manos, retira el vendaje con cuidado y limpia el tatuaje con agua tibia y jabón neutro.
+      </p>
+
+      <p>
+        <strong>El secado:</strong>
+        Seca con papel absorbente a toques suaves.
+      </p>
 
       <h3>Fase 2: Los primeros 15 días</h3>
-      <p><strong>Hidratación justa:</strong> Aplica una capa fina de crema cicatrizante 3 o 4 veces al día.</p>
-      <p><strong>No te rasques:</strong> No retires costras ni pieles.</p>
+
+      <p>
+        <strong>Hidratación justa:</strong>
+        Aplica una capa fina de crema cicatrizante 3 o 4 veces al día.
+      </p>
+
+      <p>
+        <strong>No te rasques:</strong>
+        No retires costras ni pieles.
+      </p>
 
       <h3>Lo que debes evitar</h3>
-      <ul>
-        <li>Piscinas, playas y jacuzzis.</li>
-        <li>Exposición al sol.</li>
-        <li>Ropa ajustada.</li>
-        <li>Ejercicio intenso durante los primeros días.</li>
+
+      <ul class="avoid-list">
+        <li>
+          <i class="fa-solid fa-person-swimming avoid-icon"></i>
+          Piscinas, playas y jacuzzis.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-sun avoid-icon"></i>
+          Exposición al sol.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-shirt avoid-icon"></i>
+          Ropa ajustada.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-dumbbell avoid-icon"></i>
+          Ejercicio intenso durante los primeros días.
+        </li>
       </ul>
 
       <h3>☀️ Fase 3: Cuidado de por vida</h3>
-      <p>Una vez que la piel esté completamente lisa y ya no haya costras, alrededor de la tercera o cuarta semana, el cuidado pasa a modo mantenimiento.</p>
-      <p><strong>El secreto del color:</strong> Si quieres que tu tatuaje luzca como nuevo con el paso de los años, usa protector solar FPS 50+ cada vez que salgas al sol. Mantener la piel hidratada también ayudará a que los colores resalten más.</p>
+
+      <p>
+        Una vez que la piel esté completamente lisa y ya no haya costras alrededor de la tercera o cuarta semana, el cuidado pasa a modo mantenimiento.
+      </p>
+
+      <p>
+        <strong>El secreto del color:</strong>
+        Si quieres que tu tatuaje luzca como nuevo con el paso de los años, usa protector solar FPS 50+ cada vez que salgas al sol. Mantener la piel hidratada ayudará a conservar los colores y la definición.
+      </p>
 
       <h3>⚠️ ¿Cuándo consultar a un profesional?</h3>
-      <p>Si notas enrojecimiento intenso, calor excesivo, pus, inflamación anormal o fiebre, consulta de inmediato con tu tatuador o con un médico.</p>
-      <p>Siguiendo estas recomendaciones, tu tatuaje tendrá una cicatrización adecuada y conservará su apariencia durante muchos años.</p>
+
+      <p>
+        Si notas un enrojecimiento intenso, calor excesivo, presencia de pus, inflamación anormal o fiebre, consulta de inmediato con tu tatuador o con un médico.
+      </p>
+
+      <p>
+        Siguiendo estas recomendaciones, tu tatuaje tendrá una cicatrización adecuada y conservará su apariencia durante muchos años.
+      </p>
     `
   },
 
@@ -105,7 +160,9 @@ const texts = {
     ],
 
     originTitle: "Origin of lanolin",
-    originText: "Lanolin is extracted from sheep’s wool, specifically from the sebaceous secretions that protect their skin from the weather.",
+    originText:
+      "Lanolin is extracted from sheep’s wool, specifically from the sebaceous secretions that protect their skin from the weather.",
+
     processTitle: "Extraction process:",
     processList: [
       "<strong>Sheep shearing:</strong> The wool and the grease that covers it are obtained.",
@@ -125,30 +182,83 @@ const texts = {
     careHTML: `
       <h2>Tattoo Aftercare</h2>
 
+      <div class="care-banner">
+        <img src="./Imagenes/banner.png" alt="Cream Tattoo">
+      </div>
+
       <h3>Phase 1: The first few hours (Protection)</h3>
-      <p><strong>Respect the bandage:</strong> Leave the transparent film or healing patch on for the time recommended by your tattoo artist.</p>
-      <p><strong>The first wash:</strong> Wash your hands, carefully remove the bandage, and clean the tattoo with lukewarm water and mild, fragrance-free soap.</p>
-      <p><strong>Drying:</strong> Pat dry gently with absorbent paper. Do not rub the tattoo.</p>
+
+      <p>
+        <strong>Respect the bandage:</strong>
+        Leave the transparent film or healing patch on for the time recommended by your tattoo artist.
+      </p>
+
+      <p>
+        <strong>The first wash:</strong>
+        Wash your hands, carefully remove the bandage, and clean the tattoo with lukewarm water and mild, fragrance-free soap.
+      </p>
+
+      <p>
+        <strong>Drying:</strong>
+        Pat dry gently with absorbent paper. Do not rub the tattoo.
+      </p>
 
       <h3>Phase 2: The first 15 days</h3>
-      <p><strong>Proper hydration:</strong> Apply a very thin layer of tattoo aftercare cream 3 to 4 times a day.</p>
-      <p><strong>Do not scratch:</strong> Do not pick at scabs or peeling skin.</p>
+
+      <p>
+        <strong>Proper hydration:</strong>
+        Apply a very thin layer of tattoo aftercare cream 3 to 4 times a day.
+      </p>
+
+      <p>
+        <strong>Do not scratch:</strong>
+        Do not pick at scabs or peeling skin.
+      </p>
 
       <h3>What you should avoid</h3>
-      <ul>
-        <li>Swimming pools, beaches, and jacuzzis.</li>
-        <li>Direct sun exposure.</li>
-        <li>Tight clothing.</li>
-        <li>Intense exercise during the first few days.</li>
+
+      <ul class="avoid-list">
+        <li>
+          <i class="fa-solid fa-person-swimming avoid-icon"></i>
+          Swimming pools, beaches, and jacuzzis.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-sun avoid-icon"></i>
+          Direct sun exposure.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-shirt avoid-icon"></i>
+          Tight clothing.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-dumbbell avoid-icon"></i>
+          Intense exercise during the first few days.
+        </li>
       </ul>
 
       <h3>☀️ Phase 3: Lifelong care</h3>
-      <p>Once the skin is completely smooth and there are no scabs left, usually around the third or fourth week, aftercare becomes long-term maintenance.</p>
-      <p><strong>The secret to color:</strong> If you want your tattoo to look fresh over the years, use SPF 50+ sunscreen whenever you go out in the sun. Keeping your skin moisturized will also help the colors stand out.</p>
+
+      <p>
+        Once the skin is completely smooth and there are no scabs left, usually around the third or fourth week, aftercare becomes long-term maintenance.
+      </p>
+
+      <p>
+        <strong>The secret to color:</strong>
+        If you want your tattoo to look fresh over the years, use SPF 50+ sunscreen whenever you go out in the sun. Keeping your skin moisturized will also help the colors stand out.
+      </p>
 
       <h3>⚠️ When should you consult a professional?</h3>
-      <p>If you notice intense redness, excessive heat, pus, abnormal swelling, or fever, contact your tattoo artist or a doctor immediately.</p>
-      <p>By following these recommendations, your tattoo will heal properly and keep its appearance for many years.</p>
+
+      <p>
+        If you notice intense redness, excessive heat, pus, abnormal swelling, or fever, contact your tattoo artist or a doctor immediately.
+      </p>
+
+      <p>
+        By following these recommendations, your tattoo will heal properly and keep its appearance for many years.
+      </p>
     `
   }
 };
@@ -170,56 +280,85 @@ function cambiarIdioma(lang) {
   const t = texts[lang];
 
   document.documentElement.lang = lang;
-  labelText.textContent = t.label;
 
-  document.querySelector("button[onclick=\"mostrarPestana('info')\"]").textContent = t.tabInfo;
-  document.querySelector("button[onclick=\"mostrarPestana('cuidados')\"]").textContent = t.tabCare;
+  if (labelText) {
+    labelText.textContent = t.label;
+  }
 
-  document.getElementById('title-text').textContent = t.title;
-  document.getElementById('meta-text').textContent = t.meta;
-  document.getElementById('intro-text').textContent = t.intro;
-  document.getElementById('benefits-title').textContent = t.benefitsTitle;
-  document.getElementById('uses-title').textContent = t.usesTitle;
-  document.getElementById('origin-title').textContent = t.originTitle;
-  document.getElementById('origin-text').textContent = t.originText;
-  document.getElementById('process-title').textContent = t.processTitle;
-  document.getElementById('function-title').textContent = t.functionTitle;
-  document.getElementById('footer-copy').textContent = t.footerCopy;
+  const tabInfo = document.querySelector("button[onclick=\"mostrarPestana('info')\"]");
+  const tabCare = document.querySelector("button[onclick=\"mostrarPestana('cuidados')\"]");
+
+  if (tabInfo) tabInfo.textContent = t.tabInfo;
+  if (tabCare) tabCare.textContent = t.tabCare;
+
+  const titleText = document.getElementById("title-text");
+  const metaText = document.getElementById("meta-text");
+  const introText = document.getElementById("intro-text");
+  const benefitsTitle = document.getElementById("benefits-title");
+  const usesTitle = document.getElementById("uses-title");
+  const originTitle = document.getElementById("origin-title");
+  const originText = document.getElementById("origin-text");
+  const processTitle = document.getElementById("process-title");
+  const functionTitle = document.getElementById("function-title");
+  const footerCopy = document.getElementById("footer-copy");
+
+  if (titleText) titleText.textContent = t.title;
+  if (metaText) metaText.textContent = t.meta;
+  if (introText) introText.textContent = t.intro;
+  if (benefitsTitle) benefitsTitle.textContent = t.benefitsTitle;
+  if (usesTitle) usesTitle.textContent = t.usesTitle;
+  if (originTitle) originTitle.textContent = t.originTitle;
+  if (originText) originText.textContent = t.originText;
+  if (processTitle) processTitle.textContent = t.processTitle;
+  if (functionTitle) functionTitle.textContent = t.functionTitle;
+  if (footerCopy) footerCopy.textContent = t.footerCopy;
 
   updateList("benefits-list", t.benefitsList);
   updateList("uses-list", t.usesList);
   updateList("process-list", t.processList);
   updateList("function-list", t.functionList);
 
- const careCard = document.getElementById("care-content");
+  const careCard = document.getElementById("care-content");
+
   if (careCard) {
     careCard.innerHTML = t.careHTML;
   }
 }
 
-toggle.addEventListener('change', () => {
-  const lang = toggle.checked ? 'en' : 'es';
-  cambiarIdioma(lang);
-});
+if (toggle) {
+  toggle.addEventListener("change", () => {
+    const lang = toggle.checked ? "en" : "es";
+    cambiarIdioma(lang);
+  });
+}
 
 function mostrarPestana(id) {
-  document.querySelectorAll('.tab-content').forEach(tab => {
-    tab.classList.remove('active');
+  document.querySelectorAll(".tab-content").forEach(tab => {
+    tab.classList.remove("active");
   });
 
-  document.querySelectorAll('.tab-button').forEach(btn => {
-    btn.classList.remove('active');
+  document.querySelectorAll(".tab-button").forEach(btn => {
+    btn.classList.remove("active");
   });
 
-  document.getElementById(id).classList.add('active');
+  const tabActiva = document.getElementById(id);
+
+  if (tabActiva) {
+    tabActiva.classList.add("active");
+  }
 
   const botonActivo = document.querySelector(
     `button[onclick="mostrarPestana('${id}')"]`
   );
 
   if (botonActivo) {
-    botonActivo.classList.add('active');
+    botonActivo.classList.add("active");
   }
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 cambiarIdioma("es");
