@@ -586,3 +586,22 @@ ol li::before {
     font-size: 28px;
   }
 }
+
+/* QUITAR ICONOS GENERADOS EN LISTA DE EVITAR */
+#cuidados .avoid-list li::before,
+#cuidados .avoid-list li::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* MOSTRAR LOS ICONOS DEL HTML */
+#cuidados .avoid-list img {
+  display: block !important;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 12px;
+  object-fit: contain;
+  position: static !important;
+  z-index: 2;
+}
+
