@@ -117,3 +117,28 @@ toggle.addEventListener('change', () => {
   updateList("process-list", t.processList);
   updateList("function-list", t.functionList);
 });
+
+// ================================
+// Pestañas Lanolina / Cuidados
+// ================================
+
+function mostrarPestana(id) {
+
+  document.querySelectorAll('.tab-content').forEach(tab => {
+    tab.classList.remove('active');
+  });
+
+  document.querySelectorAll('.tab-button').forEach(btn => {
+    btn.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active');
+
+  const botonActivo = document.querySelector(
+    `button[onclick="mostrarPestana('${id}')"]`
+  );
+
+  if (botonActivo) {
+    botonActivo.classList.add('active');
+  }
+}
