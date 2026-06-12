@@ -567,6 +567,23 @@ ol li::before {
     border-bottom: none;
   }
 
+   #cuidados .avoid-list li::before {
+  display: none;
+}
+
+#cuidados .avoid-list li {
+  padding: 18px 12px;
+}
+
+#cuidados .avoid-list img {
+  width: 58px;
+  height: 58px;
+  display: block;
+  margin: 0 auto 12px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
+}
+
   .whatsapp-float {
     width: 56px;
     height: 56px;
