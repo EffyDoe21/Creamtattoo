@@ -41,7 +41,6 @@ body::before {
   z-index: 0;
 }
 
-
 body > * {
   position: relative;
   z-index: 1;
@@ -430,29 +429,37 @@ ol li::before {
     0 0 12px rgba(226,27,45,0.55);
 }
 
-#cuidados ul {
+/* LISTA DE EVITAR */
+
+#cuidados .avoid-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px;
   gap: 0;
 }
 
-#cuidados ul li {
+#cuidados .avoid-list li {
   text-align: center;
-  padding: 56px 14px 16px;
+  padding: 20px 15px;
   border-bottom: none;
   border-right: 1px solid rgba(255,255,255,0.20);
 }
 
-#cuidados ul li:last-child {
+#cuidados .avoid-list li:last-child {
   border-right: none;
 }
 
-#cuidados ul li::before {
-  left: 50%;
-  top: 12px;
-  transform: translateX(-50%);
-  content: "⚠";
+#cuidados .avoid-list li::before {
+  display: none;
+}
+
+#cuidados .avoid-list img {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: 0 auto 12px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
 }
 
 /* FOOTER */
@@ -554,35 +561,24 @@ ol li::before {
     left: 14px;
   }
 
-  #cuidados ul {
+  #cuidados .avoid-list {
     grid-template-columns: 1fr;
   }
 
-  #cuidados ul li {
+  #cuidados .avoid-list li {
     border-right: none;
     border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding: 18px 12px;
   }
 
-  #cuidados ul li:last-child {
+  #cuidados .avoid-list li:last-child {
     border-bottom: none;
   }
 
-   #cuidados .avoid-list li::before {
-  display: none;
-}
-
-#cuidados .avoid-list li {
-  padding: 18px 12px;
-}
-
-#cuidados .avoid-list img {
-  width: 58px;
-  height: 58px;
-  display: block;
-  margin: 0 auto 12px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
-}
+  #cuidados .avoid-list img {
+    width: 58px;
+    height: 58px;
+  }
 
   .whatsapp-float {
     width: 56px;
