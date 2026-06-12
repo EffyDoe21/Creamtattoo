@@ -603,5 +603,26 @@ ol li::before {
   object-fit: contain;
   position: static !important;
   z-index: 2;
+
+   /* ARREGLO FINAL ICONOS EVITAR */
+#cuidados .avoid-list li {
+  padding: 20px 15px !important;
+  text-align: center !important;
+}
+
+#cuidados .avoid-list li::before {
+  content: "" !important;
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+#cuidados .avoid-list img {
+  display: block !important;
+  width: 70px !important;
+  height: 70px !important;
+  margin: 0 auto 12px !important;
+  object-fit: contain !important;
+}
 }
 
